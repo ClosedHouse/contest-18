@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LEVELS_DIR="/root/oh"
+LEVELS_DIR="/home/oh/contest-18/"
 LEVEL_CODE="$1"
 
 LEVELS[0]='OH18_O0PS1'
@@ -12,13 +12,12 @@ check_level()
 	LEVEL="$1"
 	for ((p = 0; p < 2; ++p)); do
 		if [[ "${LEVELS[$p]}" == "$LEVEL" ]]; then
-			echo $(($p + 1))
-			return
+			return $(($p + 2))
 		fi
 	done
 
 	echo "No valid level code."
-	exit 1
+	exit 0
 }
 
 unlock_level()
@@ -28,5 +27,6 @@ unlock_level()
 	chmod o+rx "${LEVELS_DIR}/${LEVEL}"
 }
 
-P=$(check_level "$LEVEL_CODE")
+check_level "$LEVEL_CODE"
+P=$?
 unlock_level $P

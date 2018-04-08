@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CONTRIB="/home/oh/contest-18/contrib"
+
+sudo "${CONTRIB}/next-level-wrapper" "${1}"
