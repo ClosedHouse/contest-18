@@ -1,0 +1,32 @@
+#!/bin/bash
+
+LEVELS_DIR="/root/oh"
+LEVEL_CODE="$1"
+
+LEVELS[0]='OH18_O0PS1'
+LEVELS[1]='OH18_INV4DERs'
+LEVELS[2]='OH18_RH6+12'
+
+check_level()
+{
+	LEVEL="$1"
+	for ((p = 0; p < 2; ++p)); do
+		if [[ "${LEVELS[$p]}" == "$LEVEL" ]]; then
+			echo $(($p + 1))
+			return
+		fi
+	done
+
+	echo "No valid level code."
+	exit 1
+}
+
+unlock_level()
+{
+	LEVEL="$1"
+	echo "Level ${LEVEL} unlocked!"
+	chmod o+rx "${LEVELS_DIR}/${LEVEL}"
+}
+
+P=$(check_level "$LEVEL_CODE")
+unlock_level $P
