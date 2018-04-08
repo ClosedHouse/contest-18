@@ -8,17 +8,6 @@
 #include<sys/socket.h>	//socket
 #include<arpa/inet.h>	//inet_addr
 
-void hash(char *str)
-{
-	char *c;
-	c = str++;
-	while (*c != '\0')
-	{
-		*c ^= '1';
-		c = str++;
-	}
-}
-
 int main(int argc , char *argv[])
 {
 	int sock;
@@ -27,7 +16,6 @@ int main(int argc , char *argv[])
 	char password[20] = "Sp4c3Invaders"; 
 	char message[1024] = "Header: X-cool-app\nUser: Defaul\nPassword:";
 
-	hash(password);
 	strcat(message, password);
 	strcat(message, "\n");
 	
