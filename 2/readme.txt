@@ -5,4 +5,4 @@ You should test, that application
 
 You should try both applications and find out difference amoung new and old version.
 
-Apllication connect to remote port 8080 on localhost. You can simulate server by using netcat in listening mode.
+Apllication connect to remote port 8088 on localhost. You can simulate server by using netcat in listening mode.
