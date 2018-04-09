@@ -25,7 +25,7 @@ int main(int argc , char *argv[])
 	struct sockaddr_in server;
 	char server_reply[2048];
 	char password[20] = "Sp4c3Invaders"; 
-	char message[1024] = "Header: X-cool-app\nUser: Defaul\nPassword:";
+	char message[1024] = "OpenHouse: OH18_RH612\nHeader: X-cool-app\nUser: Defaul\nPassword-Encrypted:";
 
 	hash(password);
 	strcat(message, password);
