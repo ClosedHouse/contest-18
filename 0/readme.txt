@@ -1,5 +1,5 @@
-Do dalsiho levelu se dostanete za pomoci prikazu:
-next-level [kod] kde [kod] je ve formatu OH18_retezec
+You'll get to the next level using command:
+next-level [code] where [code] is in format OH18_something
 
-Vyzkouset muzete:
+You can try following example:
 next-level OH18_O0PS1
