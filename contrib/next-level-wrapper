@@ -12,7 +12,7 @@ check_level()
 	LEVEL="$1"
 	for ((p = 0; p < 2; ++p)); do
 		if [[ "${LEVELS[$p]}" == "$LEVEL" ]]; then
-			return $(($p + 2))
+			return $(($p + 1))
 		fi
 	done
 
@@ -24,7 +24,7 @@ unlock_level()
 {
 	LEVEL="$1"
 	echo "Level ${LEVEL} unlocked!"
-	chmod o+rx "${LEVELS_DIR}/${LEVEL}"
+	chmod -R o+rx "${LEVELS_DIR}/${LEVEL}"
 }
 
 check_level "$LEVEL_CODE"
