@@ -7,7 +7,9 @@ to be broken. You went to chat  with the developer and you discovered they
 decided to use a new cutting edge space characters instead of good old
 tabulators as *separators* inside Makefiles.
 (hint: you can take a look to ascii table using:
+
 $ man ascii
+
 and search for \t and SPACE chars)
 
 Makefiles have funny history and during their 'birth' it has been decided
@@ -21,6 +23,7 @@ a package from a bunch of files.
 You were given two so called source packages - these are packages from which
 the REAL packages are built from and end with '.src.rpm'. To look inside such
 package you need to unpack it first. For that purpose, one can use rpm command:
+
 $ rpm -i my-package.src.rpm
 
 This command will unpack the package into a specific structure located under
@@ -29,6 +32,7 @@ such as BUILD, BUILDROOT, RPMS, and so on. The previous rpm command prepared
 your source package to be built, so let's try it - go into the SPECS directory
 where you should see a package_name.spec file. That's basically a recipe for
 your package. To build a package from that recipe, you can use rpmbuild command:
+
 $ rpmbuild -ba my_package.spec
 
 If the build succeeds, you'll find a brand new RPM under the RPMS directory. If not,
