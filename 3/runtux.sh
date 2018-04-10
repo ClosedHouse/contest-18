@@ -4,6 +4,6 @@ timeout 120 supertux2 -f --disable-sound --disable-music "/usr/share/supertux2/l
 
 echo
 echo
-echo "THE END! Ask for price!"
+echo "THE END! Ask for a prize!"
 echo
 echo
