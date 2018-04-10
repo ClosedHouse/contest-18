@@ -1,4 +1,4 @@
-You'll get to the next level using command:
+You'll get to the next level using this command:
 
 $ next-level [code]
     where [code] is in format OH18_something

@@ -3,14 +3,14 @@ We need to guarantee to the customers, that they will be able to install,
 rebuild, and uninstall packages without harm.
 
 After some investigation you figured out, that the new package version seems
-to be broken. You went to chat  with the developer and you discovered they
+to be broken. You went to chat with the developer and you discovered they
 decided to use a new cutting edge space characters instead of good old
 tabulators as *separators* inside Makefiles.
-(hint: you can take a look to ascii table using:
+(hint: You can take a look to ascii table using:
 
 $ man ascii
 
-and search for \t and SPACE chars)
+and search for \t and SPACE chars.)
 
 Makefiles have funny history and during their 'birth' it has been decided
 that spaces shall not be used in some parts of the file but in others they
@@ -37,7 +37,7 @@ $ rpmbuild -ba ~/rpmbuild/SPECS/my_package.spec
 
 If the build succeeds, you'll find a brand new RPM under the RPMS directory. If not,
 an error will pop up and the rpmbuild will die with a non-zero exit code, giving
-you an opportunity to fix the problem a try to build it again. The problem can
+you an opportunity to fix the problem and try to build it again. The problem can
 be in the recipe itself, or in the package files.
 
 Let's say your spec file is correct, so the problem lies somewhere among your

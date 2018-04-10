@@ -1,2 +1,2 @@
 # contest-18
-Nothint to see here.
+Nothing to see here.
