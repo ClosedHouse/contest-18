@@ -33,7 +33,7 @@ your source package to be built, so let's try it - go into the SPECS directory
 where you should see a package_name.spec file. That's basically a recipe for
 your package. To build a package from that recipe, you can use rpmbuild command:
 
-$ rpmbuild -ba my_package.spec
+$ rpmbuild -ba ~/rpmbuild/SPECS/my_package.spec
 
 If the build succeeds, you'll find a brand new RPM under the RPMS directory. If not,
 an error will pop up and the rpmbuild will die with a non-zero exit code, giving
