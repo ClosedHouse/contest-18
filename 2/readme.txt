@@ -19,7 +19,3 @@ purpose you can use netcat (nc command)
 With this knowledge test if the old version indeed sends the passwords in
 a plain text and the new does not. Also, look for possible changes in response
 headers.
-
-Hints:
-
-netcat command.

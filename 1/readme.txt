@@ -47,8 +47,3 @@ Checklist:
       troubles.
     * Try to use diff utility to compare both Makefile files.
     * If you manage to fix the issue, you'll find the desired answer you seek.
-
-Build of package failed because:
-a) there has been aliens hidden inside spec file
-
-
