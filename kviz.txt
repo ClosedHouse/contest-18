@@ -1,10 +1,22 @@
+What does "QA" mean in the testing workflow?
+a) Quality Analysis
+b) Quantity Assurance
+c) Quality Assurance
+d) Questions & Answers
+
+As a Quality Engineer - in which case you can say the package has been tested enough?
+a) the time required for testing ran out
+b) you are confident with the level of testing you performed
+c) there are no more issues
+d) the users didn't find any serious issues
+
 What's the name of the bug tracking system used by Red Hat.
 a) godzilla
 b) bugzilla
 d) mozilla
 c) failzilla
 
-You found a bug in a software - what's the next step you should take?
+You found a new bug in a software - what's the next step you should take?
 a) panic!
 b) call the brown code
 c) file an issue in a bug tracking system
