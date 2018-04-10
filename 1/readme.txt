@@ -4,7 +4,7 @@ rebuild, and uninstall packages without harm.
 
 After some investigation you figured out, that the new package version seems
 to be broken. You went to chat  with the developer and you discovered they
-decided to use a new cutting edge space characters instead of good old 
+decided to use a new cutting edge space characters instead of good old
 tabulators as *separators* inside Makefiles.
 (hint: you can take a look to ascii table using:
 $ man ascii
@@ -34,9 +34,13 @@ $ rpmbuild -ba my_package.spec
 If the build succeeds, you'll find a brand new RPM under the RPMS directory. If not,
 an error will pop up and the rpmbuild will die with a non-zero exit code, giving
 you an opportunity to fix the problem a try to build it again. The problem can
-be in the recipe itself, or in the package files - these can be found under
-the BUILD/package_name... directory (but only if you attempted to build it
-at least once).
+be in the recipe itself, or in the package files.
+
+Let's say your spec file is correct, so the problem lies somewhere among your
+source files - these can be found in the SOURCES directory, most likely in
+an archive. In that case you need to unpack that archive, fix the issue, and
+pack it again using your favorite archive management utilities. After this
+you should be able to finally build your package.
 
 Now you hopefully know everything you need to know and can try to solve the
 puzzle.
