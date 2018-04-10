@@ -1,17 +1,16 @@
-Jak se jmenuje nastroj na trackovani bugu?
-
+What's the name of the bug tracking system used by Red Hat.
 a) godzilla
 b) bugzilla
 d) mozilla
 c) failzilla
 
-Co delat v pripade nalezeni chyby v software?
-a) zachovat paniku
-b) vyhlasit hnedy poplach (brown code)
-c) nahlasit chybu do trackovaciho systemu
-d) rozeslat hromadny email
+You found a bug in a software - what's the next step you should take?
+a) panic!
+b) call the brown code
+c) file an issue in a bug tracking system
+d) send a bulk email
 
-Co je to CI z pohledu QE?
+What's "CI" from the QE point of view?
 a) Common Integration
 b) Continuous integration
 c) Common interface
