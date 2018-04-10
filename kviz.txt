@@ -1,0 +1,18 @@
+Jak se jmenuje nastroj na trackovani bugu?
+
+a) godzilla
+b) bugzilla
+d) mozilla
+c) failzilla
+
+Co delat v pripade nalezeni chyby v software?
+a) zachovat paniku
+b) vyhlasit hnedy poplach (brown code)
+c) nahlasit chybu do trackovaciho systemu
+d) rozeslat hromadny email
+
+Co je to CI z pohledu QE?
+a) Common Integration
+b) Continuous integration
+c) Common interface
+d) Carbon Inside
