@@ -14,7 +14,7 @@ from the developer, which should be fixed. Now everything depends on your
 ability to test whether the new version is indeed properly patched.
 
 According to the documentation you should try to listen on port 8088. For that
-purpose you can use netcat (nc command).
+purpose you can use netcat (nc or ncat command).
 
 With this knowledge test if the old version indeed sends the passwords in
 a plain text and the new send them encrypted. Also, look for possible changes
