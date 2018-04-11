@@ -8,6 +8,7 @@ fi
 pushd /home/oh/
 echo -n > .bash_history
 rm -rf ./contest-18
+rm -rf ./rpmbuild
 git clone https://github.com/ClosedHouse/contest-18.git
 chmod -R o-rx ./contest-18
 chmod o+rx ./contest-18
