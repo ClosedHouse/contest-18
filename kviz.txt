@@ -24,6 +24,6 @@ d) send a bulk email
 
 What's "CI" from the QE point of view?
 a) Common Integration
-b) Continuous integration
-c) Common interface
+b) Continuous Integration
+c) Common Interface
 d) Carbon Inside
